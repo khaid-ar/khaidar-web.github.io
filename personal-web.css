@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    font-size: 16px;
+    color: #fff;
+    cursor: default;
+}
+
+/* global scope properties */
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* setting utilitas tombol global */
+.btn {
+    background: #0086FA;
+    padding: 0.5em 1.5em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 100px;
+    max-width: 1920px;
+    line-height: 1.6;
+}
+
+/* header */
+
+header {
+    height: 100px;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 100vh;
+
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+.logo span {
+    color: #0086FA;
+    font-weight: 1000;
+}
+
+.right-menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.nav-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-menu li a {
+    font-size: 1.2rem;
+}
+
+.nav-menu li a:hover {
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 3px solid #0086FA;
+    padding-bottom: 3px;
+}
+
+/* utilitas contact-button */
+
+.btn-contact {
+    box-shadow: inset 0 0 0 #0086FA;
+    transition: 0.4s;
+}
+
+.btn-contact:hover {
+    box-shadow: inset 0 56px 0 #fff;
+    color: #0086FA;
+}
+
+
+
+/* main */
+
+main {
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    z-index: 1;
+    background-image: url(main-image.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0;
+    max-width: 100%;
+
+}
+
+.main-text {
+    margin-bottom: 20px;
+}
+
+.main-text h1 {
+    font-weight: bold;
+    font-size: 8rem;
+    line-height: 1;
+    letter-spacing: 0.6rem;
+}
+
+.main-text h1 span {
+    color: #0086FA;
+}
+
+.main-text h2 {
+    font-weight: 400;
+}
+
+.main-text h3 {
+    font-weight: 500;
+}
+
+/* utilitas hire-button */
+.btn-hire {
+    font-size: 1.5em;
+    margin-top: 20px;
+    background: none;
+    border: 3px solid #0086FA;
+    transition: 0.4s;
+    box-shadow: inset 0 0 0 #0086FA;
+}
+
+.btn-hire:hover {
+    box-shadow: inset 300px 0 0 #0086FA;
+    color: white;
+}
+
+
+.about {
+    height: 50vh;
+    bottom: 0;
+
+}
+
+.skill-outter {
+    width: 300px;
+    height: 12px;
+    background-color: #A5A5A5;
+    border-radius: 10px;
+}
+
+.skill-inner {
+    width: 120px;
+    height: 100%;
+    background-color: #0086FA;
+    border-radius: 10px;
+}
