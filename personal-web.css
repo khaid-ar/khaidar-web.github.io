@@ -6,10 +6,11 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #fff;
+
     font-size: 16px;
     color: #fff;
     cursor: default;
+    scroll-behavior: smooth;
 }
 
 /* global scope properties */
@@ -40,7 +41,7 @@ a {
 /* setting utilitas tombol global */
 .btn {
     background: #0086FA;
-    padding: 0.5em 1.5em;
+    padding: 0.8em 1.8em;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -50,6 +51,7 @@ a {
     padding: 0 100px;
     max-width: 1920px;
     line-height: 1.6;
+    height: 100%;
 }
 
 /* header */
@@ -60,13 +62,14 @@ header {
     z-index: 10;
     margin-bottom: 100vh;
 
+
 }
 
 header .container {
-    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .logo {
@@ -125,17 +128,16 @@ main {
     position: absolute;
     height: 100vh;
     top: 0;
-    z-index: 1;
     background-image: url(main-image.jpg);
     background-position: center;
     background-size: cover;
+    box-shadow: 0 5px 10px #000;
 }
 
 main .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 0;
     max-width: 100%;
@@ -143,7 +145,7 @@ main .container {
 }
 
 .main-text {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .main-text h1 {
@@ -166,6 +168,7 @@ main .container {
 }
 
 /* utilitas hire-button */
+
 .btn-hire {
     font-size: 1.5em;
     margin-top: 20px;
@@ -173,6 +176,7 @@ main .container {
     border: 3px solid #0086FA;
     transition: 0.4s;
     box-shadow: inset 0 0 0 #0086FA;
+    padding: 0.5em 1.2em;
 }
 
 .btn-hire:hover {
@@ -182,21 +186,180 @@ main .container {
 
 
 .about {
-    height: 50vh;
-    bottom: 0;
+    color: #000;
+    height: 100vh;
+    position: static;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
 
 }
 
+.about .container h1 {
+    text-align: center;
+
+}
+
+
+
+.right-container {
+    flex: 2;
+    height: 100%;
+}
+
+
+
+.right-container .bio {
+    border: 1px solid #0086FA;
+}
+
+.bio {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 2;
+    margin: 50px 0;
+}
+
+
+.bio p span {
+    font-weight: 500;
+}
+
+.left-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+.left-container img {
+    width: 60%;
+
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 50%;
+    gap: 20px;
+}
+
+.skill-content-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.skill-content-title p span {
+    font-weight: 500;
+}
+
+.btn-transkrip {
+    padding: 0.8em 1.8em;
+    box-shadow: inset 0 0 0 #0086FA;
+    transition: 0.4s;
+}
+
+.btn-transkrip:hover {
+    box-shadow: inset 0 56px 0 #fff;
+    color: #0086FA;
+    border: 1px solid #0086FA;
+    font-weight: 500;
+}
+
 .skill-outter {
-    width: 300px;
+    width: 100%;
     height: 12px;
     background-color: #A5A5A5;
     border-radius: 10px;
 }
 
 .skill-inner {
-    width: 120px;
+    width: 60%;
     height: 100%;
     background-color: #0086FA;
     border-radius: 10px;
+}
+
+/* services */
+.services {
+    height: 100vh;
+
+}
+
+
+.services .container h1 {
+    text-align: center;
+    margin-bottom: 100px;
+    color: #000;
+}
+
+.services-card-views {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-services {
+    width: 32%;
+    height: 400px;
+    box-shadow: 2px 2px 8px 0.1px #000;
+    position: relative;
+    z-index: 5;
+    transition: 0.5s;
+
+}
+
+.card-services img {
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    box-shadow: inset 10px 10px 0 #000
+}
+
+.card-text {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left: 6%;
+}
+
+.work {
+    color: #000;
+}
+
+.work h1 {
+    text-align: center;
+}
+
+.card-text h3 span {
+    font-weight: 300;
+}
+
+
+
+.card-services:hover::after {
+    content: 'Interested';
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    z-index: 100;
 }
